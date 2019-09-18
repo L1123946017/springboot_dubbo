@@ -1,0 +1,9 @@
+server:
+  port: 8982
+dubbo:
+  application:
+    name: springboot-consumer
+  registry:
+    address: zookeeper://192.168.25.135:2181
+  scan:
+    base-packages: com.ljh.controller

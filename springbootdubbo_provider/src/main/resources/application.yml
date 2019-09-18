@@ -1,0 +1,14 @@
+server:
+  port: 8981
+
+dubbo:
+  application:
+    name: springboot-provider
+  registry:
+    address: zookeeper://192.168.25.135:2181
+  protocol:
+    name: dubbo
+    port: 20880
+
+  scan:
+    base-packages: com.ljh.service
